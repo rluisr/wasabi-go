@@ -19,10 +19,10 @@ func main() {
 Supported method
 ----------------
 - [ ] get status
-- [ ] create wallet
+- [x] create wallet
 - [ ] list unspent coins
 - [x] get wallet info
-- [ ] get new address
+- [x] get new address
 - [ ] send
 - [ ] get history
 - [ ] list keys

@@ -19,3 +19,11 @@ func TestClient_GetWalletInfo(t *testing.T) {
 	assert.NoError(t, err)
 	assert.NotEmpty(t, wallet)
 }
+
+//func TestClient_CreateWallet(t *testing.T) {
+//	setup()
+//
+//	recoveryKeys, err := client.CreateWallet("test", "test")
+//	assert.NoError(t, err)
+//	assert.NotEmpty(t, recoveryKeys)
+//}

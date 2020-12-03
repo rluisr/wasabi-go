@@ -40,3 +40,20 @@ func (c *Client) GetWalletInfo() (*Wallet, error) {
 
 	return &wallet, err
 }
+
+func (c *Client) CreateWallet(name, pass string) ([]string, error) {
+	resp, err := c.request(Request{
+		JSONRPC: JSONRPC,
+		ID:      "1",
+		Method:  "createwallet",
+		Params:  []string{name, pass},
+	})
+	if err != nil {
+		return nil, err
+	}
+
+	var recoveryKeys []string
+	err = json.Unmarshal(resp.Result, &recoveryKeys)
+
+	return recoveryKeys, err
+}
