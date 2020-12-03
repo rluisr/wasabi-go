@@ -1,5 +1,7 @@
 wasabi-go
 ==========
+![golangci-lint](https://github.com/rluisr/wasabi-go/workflows/golangci-lint/badge.svg)
+
 Client for Wasabi Wallet.  
 This is under the work in progress.
 
