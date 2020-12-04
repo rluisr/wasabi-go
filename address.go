@@ -3,11 +3,11 @@ package wasabi
 import "encoding/json"
 
 type Address struct {
-	Address   string `json:"address"`
-	KeyPath   string `json:"keyPath"`
-	Label     string `json:"label"`
-	PublicKey string `json:"publicKey"`
-	P2wpkh    string `json:"p2wpkh"`
+	Address   string   `json:"address"`
+	KeyPath   string   `json:"keyPath"`
+	Label     []string `json:"label"`
+	PublicKey string   `json:"publicKey"`
+	P2wpkh    string   `json:"p2wpkh"`
 }
 
 func (c *Client) GetNewAddress(name string) (*Address, error) {
